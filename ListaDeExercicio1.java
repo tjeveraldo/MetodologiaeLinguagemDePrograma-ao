@@ -15,7 +15,7 @@ public class Questao01 {
 			
 			System.out.printf("Novo salario: R$ %.2%n", salario);
 			
-			System.out.printf("%nFim da execução.%n");
+			System.out.printf("%nFim da execuÃ§Ã£o.%n");
 			
 			input.close();
 		}
