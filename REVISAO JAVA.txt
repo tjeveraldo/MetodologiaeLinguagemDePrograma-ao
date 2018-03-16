@@ -1,0 +1,56 @@
+JAVA - REVISÃO
+
+1)B
+2)B
+3)E
+4)D
+5)B 
+6)D
+7)A
+8)C
+9)B
+
+10)   public class Animal {
+	private String nome;
+	private String apelido;
+	private byte idade;
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getApelido() {
+		return apelido;
+	}
+	public void setApelido(String apelido) {
+		this.apelido = apelido;
+	}
+	public byte getIdade() {
+		return idade;
+	}
+	public void setIdade(byte idade) {
+		this.idade = idade;
+	}
+}
+
+
+
+
+
+
+
+
+JAVA - REVISÃO 2
+
+1)
+2)
+3)
+4)
+5)
+6)
+7)
+8)
+9)
+10)
