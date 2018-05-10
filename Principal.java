@@ -1,30 +1,20 @@
-import java.util.InputMismatchException;
-import java.util.Scanner;
+package br.unipe.cc.exceptions;
 
 public class Principal {
+	public static void main(String[] args) throws ErroChecado, SaldoInsuficiente, ClienteNaoEncontrado, ContaNaoEncontrada {
+		ContaCorrente conta = new ContaCorrente();
 		
-	public static void main(String[] args) {
+		conta.sacar(50.0f);
 		
-		Chines chines = new Chines();
-		chines.escravo();
-		Japones japones = new Japones();
-		Scanner leitor = new Scanner(System.in);
+		conta.buscaCliente("Gomes");
 		
-		System.out.println("Informe um número");
+		conta.buscaConta(0001234);		
 		
-				
-		try {
-			int i = leitor.nextInt();
-			
-			japones.produzInteligencia();
-		} catch (InputMismatchException e) {
-			System.out.println("Digite apenas valores");
-		}catch (Exception e){
-			e.printStackTrace();
-		}finally{
-			System.out.println("Sempre executa");
-		}
+		ErroChecado erro = new ErroChecado("Erro");
+		throw erro;
 		
-		leitor.close();
+		//System.out.println("Alô"); //trecho de código que nunca será alcançado por causa do throw acima
 	}
+
+
 }
